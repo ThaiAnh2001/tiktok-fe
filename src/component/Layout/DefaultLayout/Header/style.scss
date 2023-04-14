@@ -1,0 +1,86 @@
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    border: 1px solid #ccc;
+    &__wrap {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px 0 16px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        & img {
+            height: 36px;
+            float: left;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__search {
+        display: flex;
+        width: 415px;
+        height: 46px;
+        border-radius: 25px;
+        padding-left: 12px;
+        overflow: hidden;
+        background-color: rgba(241, 241, 242, 1);
+
+        & form {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            & input {
+                flex: 1;
+                height: 30px;
+                outline: none;
+                font-size: 16px;
+                border: none;
+                border-right: 2px solid #ccc;
+                background-color: rgba(241, 241, 242, 1);
+            }
+            & button {
+                width: 46px;
+                height: 46px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    cursor: pointer;
+                }
+                border: none;
+                background-color: rgba(241, 241, 242, 1);
+            }
+        }
+    }
+    &__task {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        &__icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-left: 20px;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(22, 24, 35, 0.03);
+            }
+            &:active {
+                cursor: pointer;
+                background-color: rgba(22, 24, 35, 0.06);
+            }
+        }
+    }
+}
